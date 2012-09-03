@@ -60,7 +60,7 @@ module Mongoid
         
         def tagged_with(tags)
           tags = [tags] unless tags.is_a? Array
-          criteria.in(:tags => tags).to_a
+          criteria.in(:tags => tags)
         end
       end
       
